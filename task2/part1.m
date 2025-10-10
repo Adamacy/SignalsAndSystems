@@ -1,8 +1,11 @@
+close all;
+clear all;
+clc;
 function kff = calculateKff(signal)
      rms_value = rms(signal);
-
+     
     arv = mean(abs(signal));
-    
+    disp(arv)
     if arv == 0
         kff = 0; 
     else
@@ -17,7 +20,7 @@ kff = calculateKff(y);
 
 figure;
 
-t = 0: 0.00001 : 2;
+t = 0 : 0.00001 : 2;
 f = 5;
 A = 5.12;
 

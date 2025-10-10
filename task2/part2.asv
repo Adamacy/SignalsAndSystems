@@ -1,0 +1,8 @@
+sawtooth_form_factor = 2/sqrt(3);
+sawtooth_arv = 2.5599;
+
+
+rms = sawtooth_form_factor * sawtooth_arv;
+disp(rms);
+
+disp("This method will work with other signals if we know the form factor which is known becuse it doesn't change ")
