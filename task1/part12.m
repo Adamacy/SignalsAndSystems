@@ -23,4 +23,3 @@ noise = 0.1 * randn(size(signal));
 x_noisy = signal + noise;
 
 plot(t, x_noisy);
-
