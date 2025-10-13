@@ -5,7 +5,6 @@ function kff = calculateKff(signal)
      rms_value = rms(signal);
      
     arv = mean(abs(signal));
-    disp(arv)
     if arv == 0
         kff = 0; 
     else
