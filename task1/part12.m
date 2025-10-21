@@ -2,10 +2,10 @@ close all;
 clear all;
 clc;
 T = 0.005; % Sampling Period
-t_end = 4;
+t_end = 20;
 t = 0 : T : t_end;
 A = 2.5; % Amplitude
-f = 2; %Hz
+f = 1/10; %Hz
 signal = A * sin(2*pi*f*t);
 
 plot(t, signal);
@@ -23,3 +23,4 @@ noise = 0.1 * randn(size(signal));
 x_noisy = signal + noise;
 
 plot(t, x_noisy);
+grid on;
